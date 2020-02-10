@@ -14,10 +14,11 @@ declare(strict_types=1);
 namespace KodeKeep\NotificationMethods\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class NotificationMethod extends Model
 {
-    public function getFillable()
+    public function getFillable(): array
     {
         $result = ['name', 'channel'];
 
@@ -30,7 +31,7 @@ class NotificationMethod extends Model
         return $result;
     }
 
-    public function notifiable()
+    public function notifiable(): MorphTo
     {
         return $this->morphTo('notifiable');
     }
