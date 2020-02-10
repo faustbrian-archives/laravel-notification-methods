@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1581340975">
+  <project timestamp="1581340975">
+    <package name="KodeKeep\NotificationMethods\Concerns">
+      <file name="/Users/brian/Code/kodekeep/laravel-notification-methods/src/Concerns/HasNotificationMethods.php">
+        <class name="HasNotificationMethods" namespace="KodeKeep\NotificationMethods\Concerns">
+          <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+        </class>
+        <line num="21" type="method" name="notificationMethods" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="23" type="stmt" count="1"/>
+        <metrics loc="25" ncloc="17" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </file>
+    </package>
+    <package name="KodeKeep\NotificationMethods\Http\Requests">
+      <file name="/Users/brian/Code/kodekeep/laravel-notification-methods/src/Http/Requests/StoreNotificationMethodRequest.php">
+        <class name="KodeKeep\NotificationMethods\Http\Requests\StoreNotificationMethodRequest" namespace="KodeKeep\NotificationMethods\Http\Requests">
+          <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+        </class>
+        <line num="21" type="method" name="rules" visibility="public" complexity="3" crap="3" count="2"/>
+        <line num="24" type="stmt" count="2"/>
+        <line num="25" type="stmt" count="2"/>
+        <line num="28" type="stmt" count="2"/>
+        <line num="29" type="stmt" count="2"/>
+        <line num="30" type="stmt" count="2"/>
+        <line num="34" type="stmt" count="2"/>
+        <line num="37" type="method" name="getSupportedChannels" visibility="private" complexity="1" crap="1" count="2"/>
+        <line num="39" type="stmt" count="2"/>
+        <metrics loc="41" ncloc="33" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="7" elements="9" coveredelements="9"/>
+      </file>
+    </package>
+    <package name="KodeKeep\NotificationMethods\Models">
+      <file name="/Users/brian/Code/kodekeep/laravel-notification-methods/src/Models/NotificationMethod.php">
+        <class name="KodeKeep\NotificationMethods\Models\NotificationMethod" namespace="KodeKeep\NotificationMethods\Models">
+          <metrics complexity="4" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+        </class>
+        <line num="20" type="method" name="getFillable" visibility="public" complexity="3" crap="3" count="1"/>
+        <line num="22" type="stmt" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="25" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="1"/>
+        <line num="30" type="stmt" count="1"/>
+        <line num="33" type="method" name="notifiable" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="35" type="stmt" count="1"/>
+        <metrics loc="37" ncloc="29" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      </file>
+    </package>
+    <metrics files="3" loc="103" ncloc="79" classes="3" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="14" coveredstatements="14" elements="19" coveredelements="19"/>
+  </project>
+</coverage>

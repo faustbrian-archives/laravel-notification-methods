@@ -1,0 +1,63 @@
+{
+    "name": "kodekeep/laravel-notification-methods",
+    "description": ":package_description",
+    "keywords": [
+        "kodekeep",
+        "laravel-notification-methods"
+    ],
+    "homepage": "https://github.com/kodekeep/laravel-notification-methods",
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "brian@kodekeep.com",
+            "homepage": "https://kodekeep.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "illuminate/contracts": "^6.0",
+        "illuminate/support": "^6.0",
+        "illuminate/validation": "^6.14"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "fzaninotto/faker": "^1.9",
+        "graham-campbell/analyzer": "^2.4",
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.3",
+        "spatie/phpunit-snapshot-assertions": "^3.1",
+        "symfony/var-dumper": "4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "KodeKeep\\NotificationMethods\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "KodeKeep\\NotificationMethods\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test:coverage": "vendor/bin/phpunit --coverage-html=.coverage --coverage-clover=coverage.xml",
+        "format": "vendor/bin/php-cs-fixer fix ./"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KodeKeep\\NotificationMethods\\NotificationMethodsServiceProvider"
+            ],
+            "aliases": {
+                "NotificationMethods": "KodeKeep\\NotificationMethods\\NotificationMethodsFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
