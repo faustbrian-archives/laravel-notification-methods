@@ -42,19 +42,16 @@ return [
 
     'channels' => [
         'discord' => [
-            'enabled'    => true,
             'properties' => [
                 'discord_url' => ['nullable', 'url', 'required_if:channel,discord'],
             ],
         ],
         'mail' => [
-            'enabled'    => true,
             'properties' => [
                 'mail_address' => ['nullable', 'email', 'required_if:channel,mail'],
             ],
         ],
         'nexmo' => [
-            'enabled'    => true,
             'properties' => [
                 'nexmo_api_key'    => ['nullable', 'string', 'required_if:channel,nexmo'],
                 'nexmo_api_secret' => ['nullable', 'string', 'required_if:channel,nexmo'],
@@ -63,26 +60,22 @@ return [
             ],
         ],
         'pushbullet' => [
-            'enabled'    => true,
             'properties' => [
                 'pushbullet_token' => ['nullable', 'string', 'required_if:channel,pushbullet'],
             ],
         ],
         'pushover' => [
-            'enabled'    => true,
             'properties' => [
                 'pushover_user'  => ['nullable', 'string', 'required_if:channel,pushover'],
                 'pushover_token' => ['nullable', 'string', 'required_if:channel,pushover'],
             ],
         ],
         'slack' => [
-            'enabled'    => true,
             'properties' => [
                 'slack_url' => ['nullable', 'url', 'required_if:channel,slack'],
             ],
         ],
         'webhook' => [
-            'enabled'    => true,
             'properties' => [
                 'webhook_url' => ['nullable', 'url', 'required_if:channel,webhook'],
             ],
