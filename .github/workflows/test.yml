@@ -40,11 +40,9 @@ jobs:
                   composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
                   composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
 
-            - name: Execute tests
-              run: composer test:coverage
-
-            - uses: codecov/codecov-action@v1
+            - name: Execute tests & Report coverage
+              uses: paambaati/codeclimate-action@v2.4.0
+              env:
+                  CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
               with:
-                  token: ${{ secrets.CODECOV_TOKEN }}
-                  file: ./coverage.xml
-                  fail_ci_if_error: true
+                  coverageCommand: composer test:coverage

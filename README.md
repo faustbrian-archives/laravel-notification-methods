@@ -1,13 +1,13 @@
 # Laravel Notification Methods
 
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/kodekeep/laravel-notification-methods/run-tests?label=tests)](https://github.com/kodekeep/laravel-notification-methods/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Code Coverage](https://badgen.now.sh/codecov/c/github/kodekeep/laravel-notification-methods)](https://codecov.io/gh/kodekeep/laravel-notification-methods)
-[![Minimum PHP Version](https://badgen.net/packagist/php/kodekeep/laravel-notification-methods)](https://packagist.org/packages/kodekeep/laravel-notification-methods)
 [![Latest Version](https://badgen.net/packagist/v/kodekeep/laravel-notification-methods)](https://packagist.org/packages/kodekeep/laravel-notification-methods)
+[![Software License](https://badgen.net/packagist/license/kodekeep/laravel-notification-methods)](https://packagist.org/packages/kodekeep/laravel-notification-methods)
+[![Build Status](https://img.shields.io/github/workflow/status/kodekeep/laravel-notification-methods/run-tests?label=tests)](https://github.com/kodekeep/laravel-notification-methods/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Coverage Status](https://badgen.net/codeclimate/coverage/kodekeep/laravel-notification-methods)](https://codeclimate.com/github/kodekeep/laravel-notification-methods)
+[![Quality Score](https://badgen.net/codeclimate/maintainability/kodekeep/laravel-notification-methods)](https://codeclimate.com/github/kodekeep/laravel-notification-methods)
 [![Total Downloads](https://badgen.net/packagist/dt/kodekeep/laravel-notification-methods)](https://packagist.org/packages/kodekeep/laravel-notification-methods)
-[![License](https://badgen.net/packagist/license/kodekeep/laravel-notification-methods)](https://packagist.org/packages/kodekeep/laravel-notification-methods)
 
-> Notification Methods for Eloquent Models.
+This package was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and provides Notification Methods for Laravel Eloquent Models.
 
 ## Installation
 
@@ -56,6 +56,10 @@ If you discover a security vulnerability within this package, please send an e-m
 
 This project exists thanks to all the people who [contribute](../../contributors).
 
+## Support Us
+
+We invest a lot of resources into creating and maintaining our packages. You can support us and the development through [GitHub Sponsors](https://github.com/sponsors/faustbrian).
+
 ## License
 
-Mozilla Public License Version 2.0 (MPL-2.0). Please see [License File](LICENSE.md) for more information.
+Laravel Notification Methods is an open-sourced software licensed under the [MPL-2.0](LICENSE.md).
