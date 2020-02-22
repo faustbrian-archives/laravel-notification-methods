@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace KodeKeep\NotificationMethods\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Validation\Rule;
 
 class StoreNotificationMethodRequest extends FormRequest
@@ -25,7 +26,7 @@ class StoreNotificationMethodRequest extends FormRequest
             'channel' => ['required', 'string', Rule::in($this->getSupportedChannels())],
         ];
 
-        foreach (config('notification-methods.channels') as $channel) {
+        foreach (Config::get('notification-methods.channels') as $channel) {
             foreach ($channel['properties'] as $propertyName => $propertyRules) {
                 $rules[$propertyName] = $propertyRules;
             }
@@ -36,6 +37,6 @@ class StoreNotificationMethodRequest extends FormRequest
 
     private function getSupportedChannels(): array
     {
-        return array_keys(config('notification-methods.channels'));
+        return array_keys(Config::get('notification-methods.channels'));
     }
 }

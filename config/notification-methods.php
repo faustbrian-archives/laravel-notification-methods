@@ -17,7 +17,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default Salt
+    | Default Models
     |--------------------------------------------------------------------------
     |
     | Here you may specify which model should be used to interact with
@@ -28,7 +28,26 @@ return [
     |
     */
 
-    'model' => NotificationMethod::class,
+    'models' => [
+
+        'notification_method' => NotificationMethod::class,
+
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Default Tables
+    |--------------------------------------------------------------------------
+    |
+    | ...
+    |
+    */
+
+    'tables' => [
+
+        'notification_methods' => 'notification_methods',
+
+    ],
 
     /*
     |--------------------------------------------------------------------------

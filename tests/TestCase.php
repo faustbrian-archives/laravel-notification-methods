@@ -2,7 +2,7 @@
 
 namespace KodeKeep\NotificationMethods\Tests;
 
-use KodeKeep\NotificationMethods\NotificationMethodsServiceProvider;
+use KodeKeep\NotificationMethods\Providers\NotificationMethodsServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase

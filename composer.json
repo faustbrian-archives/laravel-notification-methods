@@ -51,7 +51,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "KodeKeep\\NotificationMethods\\NotificationMethodsServiceProvider"
+                "KodeKeep\\NotificationMethods\\Providers\\NotificationMethodsServiceProvider"
             ],
             "aliases": {
                 "NotificationMethods": "KodeKeep\\NotificationMethods\\NotificationMethodsFacade"

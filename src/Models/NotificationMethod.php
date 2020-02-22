@@ -15,6 +15,7 @@ namespace KodeKeep\NotificationMethods\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Facades\Config;
 
 class NotificationMethod extends Model
 {
@@ -22,7 +23,7 @@ class NotificationMethod extends Model
     {
         $result = ['name', 'channel'];
 
-        foreach (config('notification-methods.channels') as $channel) {
+        foreach (Config::get('notification-methods.channels') as $channel) {
             foreach (\array_keys($channel['properties']) as $property) {
                 $result[] = $property;
             }
@@ -34,5 +35,10 @@ class NotificationMethod extends Model
     public function notifiable(): MorphTo
     {
         return $this->morphTo('notifiable');
+    }
+
+    public function getTable(): string
+    {
+        return Config::get('notification-methods.tables.notification_methods');
     }
 }

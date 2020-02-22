@@ -14,12 +14,12 @@ declare(strict_types=1);
 namespace KodeKeep\NotificationMethods\Concerns;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use KodeKeep\NotificationMethods\Models\NotificationMethod;
+use Illuminate\Support\Facades\Config;
 
 trait HasNotificationMethods
 {
     public function notificationMethods(): MorphMany
     {
-        return $this->morphMany(NotificationMethod::class, 'notifiable');
+        return $this->morphMany(Config::get('notification-methods.models.notification_method'), 'notifiable');
     }
 }
