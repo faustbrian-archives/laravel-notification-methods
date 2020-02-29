@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## 1.1.0 - 2020-02-29
+
+### Added
+
+- Added `Mail` channel
+- Added `Discord` channel
+- Added `Nexmo` channel
+- Added `Pushbullet` channel
+- Added `Pushover` channel
+- Added `Slack` channel
+- Added `Webhook` channel
+
 ## 1.0.0 - 2020-02-10
 
 - initial release
