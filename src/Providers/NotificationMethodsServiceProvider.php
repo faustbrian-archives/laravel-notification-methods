@@ -25,8 +25,6 @@ class NotificationMethodsServiceProvider extends ServiceProvider
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
-            $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
-
             $this->publishes([
                 __DIR__.'/../../config/notification-methods.php' => $this->app->configPath('notification-methods.php'),
             ], 'config');
