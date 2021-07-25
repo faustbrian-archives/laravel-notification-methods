@@ -5,22 +5,22 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Notification Methods.
  *
- * (c) KodeKeep <hello@kodekeep.com>
+ * (c) Konceiver <info@konceiver.dev>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace KodeKeep\NotificationMethods\Tests\Unit\Http\Requests;
+namespace Konceiver\NotificationMethods\Tests\Unit\Http\Requests;
 
 use Faker\Factory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Route;
-use KodeKeep\NotificationMethods\Http\Requests\StoreNotificationMethodRequest;
-use KodeKeep\NotificationMethods\Tests\TestCase;
+use Konceiver\NotificationMethods\Http\Requests\StoreNotificationMethodRequest;
+use Konceiver\NotificationMethods\Tests\TestCase;
 
 /**
- * @covers \KodeKeep\NotificationMethods\Http\Requests\StoreNotificationMethodRequest
+ * @covers \Konceiver\NotificationMethods\Http\Requests\StoreNotificationMethodRequest
  */
 class StoreNotificationMethodRequestTest extends TestCase
 {

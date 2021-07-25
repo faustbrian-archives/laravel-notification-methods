@@ -5,21 +5,21 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Notification Methods.
  *
- * (c) KodeKeep <hello@kodekeep.com>
+ * (c) Konceiver <info@konceiver.dev>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace KodeKeep\NotificationMethods\Tests\Unit\Models;
+namespace Konceiver\NotificationMethods\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use KodeKeep\NotificationMethods\Tests\TestCase;
-use KodeKeep\NotificationMethods\Tests\Unit\ClassThatHasNotificationMethods;
+use Konceiver\NotificationMethods\Tests\TestCase;
+use Konceiver\NotificationMethods\Tests\Unit\ClassThatHasNotificationMethods;
 
 /**
- * @covers \KodeKeep\NotificationMethods\Concerns\HasNotificationMethods
+ * @covers \Konceiver\NotificationMethods\Concerns\HasNotificationMethods
  */
 class HasNotificationMethodsTest extends TestCase
 {

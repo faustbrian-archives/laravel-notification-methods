@@ -1,8 +1,8 @@
 <?php
 
-namespace KodeKeep\NotificationMethods\Tests;
+namespace Konceiver\NotificationMethods\Tests;
 
-use KodeKeep\NotificationMethods\Providers\NotificationMethodsServiceProvider;
+use Konceiver\NotificationMethods\Providers\NotificationMethodsServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase

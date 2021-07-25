@@ -1,48 +1,49 @@
 {
-    "name": "kodekeep/laravel-notification-methods",
+    "name": "konceiver/laravel-notification-methods",
     "description": ":package_description",
     "keywords": [
-        "kodekeep",
+        "konceiver",
         "laravel-notification-methods"
     ],
-    "homepage": "https://github.com/kodekeep/laravel-notification-methods",
+    "homepage": "https://github.com/konceiver/laravel-notification-methods",
     "license": "MPL-2.0",
     "authors": [
         {
             "name": "Brian Faust",
-            "email": "brian@kodekeep.com",
-            "homepage": "https://kodekeep.com",
+            "email": "hello@konceiver.dev",
+            "homepage": "https://konceiver.dev",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.4",
+        "php": "^8.0",
         "guzzlehttp/guzzle": "^6.5",
-        "illuminate/contracts": "^6.0|^7.0",
-        "illuminate/notifications": "^6.0|^7.0",
-        "illuminate/support": "^6.0|^7.0",
-        "illuminate/validation": "^6.0|^7.0",
+        "illuminate/contracts": "^8.0",
+        "illuminate/notifications": "^8.0",
+        "illuminate/support": "^8.0",
+        "illuminate/validation": "^8.0",
         "laravel/nexmo-notification-channel": "^2.3",
         "laravel/slack-notification-channel": "^2.0",
-        "nexmo/client": "^2.0"
+        "nexmo/client": "^2.0",
+        "spatie/laravel-package-tools": "^1.9"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16",
+        "friendsofphp/php-cs-fixer": "^3.0",
         "fzaninotto/faker": "^1.9",
-        "graham-campbell/analyzer": "^2.4",
-        "orchestra/testbench": "^4.0",
-        "phpunit/phpunit": "^8.3",
-        "spatie/phpunit-snapshot-assertions": "^3.1",
-        "symfony/var-dumper": "4.4"
+        "graham-campbell/analyzer": "^3.0",
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5",
+        "spatie/phpunit-snapshot-assertions": "^4.2",
+        "symfony/var-dumper": "^5.1"
     },
     "autoload": {
         "psr-4": {
-            "KodeKeep\\NotificationMethods\\": "src"
+            "Konceiver\\NotificationMethods\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "KodeKeep\\NotificationMethods\\Tests\\": "tests"
+            "Konceiver\\NotificationMethods\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -56,10 +57,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "KodeKeep\\NotificationMethods\\Providers\\NotificationMethodsServiceProvider"
+                "Konceiver\\NotificationMethods\\Providers\\NotificationMethodsServiceProvider"
             ],
             "aliases": {
-                "NotificationMethods": "KodeKeep\\NotificationMethods\\NotificationMethodsFacade"
+                "NotificationMethods": "Konceiver\\NotificationMethods\\NotificationMethodsFacade"
             }
         }
     },
